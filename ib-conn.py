@@ -1,7 +1,6 @@
 import asyncio
-import uvloop
 import ib_insync as ibi
-
+import uvloop
 
 class App:
 
@@ -16,6 +15,7 @@ class App:
 
 
 app = App()
+
 try:
     uvloop.install()
     asyncio.run(app.run())
