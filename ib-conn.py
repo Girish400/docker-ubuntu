@@ -1,5 +1,5 @@
 import asyncio
-
+import uvloop
 import ib_insync as ibi
 
 
@@ -17,6 +17,7 @@ class App:
 
 app = App()
 try:
+    uvloop.install()
     asyncio.run(app.run())
 except (KeyboardInterrupt, SystemExit):
     app.stop()

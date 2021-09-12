@@ -1,9 +1,6 @@
-version: '3.4'
-
+version: '3'
 services:
-  dockertest:
-    image: dockertest
-    build:
-      context: .
-      dockerfile: ./Dockerfile
-    container_name: DevEnvContainer
+  devcontainer:
+    build: .
+    dockerfile: ./Dockerfile
+    container_name: devenvcontainer
