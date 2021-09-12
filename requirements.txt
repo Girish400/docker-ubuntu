@@ -1,3 +1,9 @@
-# To ensure app dependencies are ported from your virtual environment/host machine into your container, run 'pip freeze > requirements.txt' in the terminal to overwrite this file
-ib-insync
-pandas
+eventkit==0.8.8
+ib-insync==0.9.66
+nest-asyncio==1.5.1
+numpy==1.21.2
+pandas==1.3.2
+python-dateutil==2.8.2
+pytz==2021.1
+six==1.16.0
+uvloop==0.16.0
