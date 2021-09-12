@@ -3,7 +3,7 @@ import ib_insync as ibi
 import uvloop
 
 class App:
-
+    
     async def run(self):
         self.ib = ibi.IB()
         with await self.ib.connectAsync(host="192.168.0.175",port=7497):
